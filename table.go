@@ -57,11 +57,6 @@ func (self *Table) ColResize() {
 func (self *Table) Buffer() *Buffer {
 	buf := self.Block.Buffer()
 
-	// removes gap at the bottom of the current view if there is one
-	if self.TopRow > len(self.Rows)-(self.Y-1) {
-		self.TopRow = len(self.Rows) - (self.Y - 1)
-	}
-
 	self.ColResizer()
 
 	// prints header
