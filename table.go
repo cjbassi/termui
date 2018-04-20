@@ -8,17 +8,21 @@ import (
 // Table tracks all the attributes of a Table instance
 type Table struct {
 	*Block
-	Header       []string
-	Rows         [][]string
-	ColWidths    []int
-	CellXPos     []int // column position
-	Gap          int   // gap between columns
-	Cursor       Color
+
+	Header []string
+	Rows   [][]string
+
+	ColWidths  []int
+	CellXPos   []int  // column position
+	ColResizer func() // for widgets that inherit a Table and want to overload the ColResize method
+	Gap        int    // gap between columns
+
+	Cursor Color
+
 	UniqueCol    int    // the column used to identify the selected item
 	SelectedItem string // used to keep the cursor on the correct item if the data changes
 	SelectedRow  int
-	TopRow       int    // used to indicate where in the table we are scrolled at
-	ColResizer   func() // for widgets that inherit a Table and want to overload the ColResize method
+	TopRow       int // used to indicate where in the table we are scrolled at
 }
 
 // NewTable returns a new Table instance
