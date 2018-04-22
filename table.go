@@ -69,7 +69,7 @@ func (self *Table) Buffer() *Buffer {
 		if width == 0 {
 			continue
 		}
-		h = MaxString(h, self.X-6)
+		h = MaxString(h, self.X-self.CellXPos[i])
 		buf.SetString(self.CellXPos[i], 1, h, self.Fg|AttrBold, self.Bg)
 	}
 
@@ -106,7 +106,7 @@ func (self *Table) Buffer() *Buffer {
 			if width == 0 {
 				continue
 			}
-			r := MaxString(row[i], self.X-6)
+			r := MaxString(row[i], self.X-self.CellXPos[i])
 			buf.SetString(self.CellXPos[i], y, r, self.Fg, bg)
 		}
 	}
