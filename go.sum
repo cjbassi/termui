@@ -1,0 +1,6 @@
+github.com/cjbassi/drawille-go v0.0.0-20180329221028-ad535d0f92cd h1:nSJpATLVvFa19BEHX4ys+VGNWfI4FUGMweEI6QXs8wg=
+github.com/cjbassi/drawille-go v0.0.0-20180329221028-ad535d0f92cd/go.mod h1:vjcQJUZJYD3MeVGhtZXSMnCHfUNZxsyYzJt90eCYxK4=
+github.com/mattn/go-runewidth v0.0.2 h1:UnlwIPBGaTZfPQ6T1IGzPI0EkYAQmT9fAEJ/poFC63o=
+github.com/mattn/go-runewidth v0.0.2/go.mod h1:LwmH8dsx7+W8Uxz3IHJYH5QSwggIsqBzpuz5H//U1FU=
+github.com/nsf/termbox-go v0.0.0-20180407224525-3e24a7b6661e h1:w2JDz0jtOlFFdvtUXISyYPFwmbZnwKL1mRDT0tKDvuk=
+github.com/nsf/termbox-go v0.0.0-20180407224525-3e24a7b6661e/go.mod h1:IuKpRQcYE1Tfu+oAQqaLisqDeXgjyyltCfsaoYN18NQ=
