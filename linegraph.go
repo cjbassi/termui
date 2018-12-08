@@ -105,7 +105,10 @@ func (self *LineGraph) Buffer() *Buffer {
 	}
 
 	// renders key/label ontop
-	for j, seriesName := range seriesList {
+	for i, seriesName := range seriesList {
+		if i+2 > self.Y {
+			continue
+		}
 		seriesLineColor, ok := self.LineColor[seriesName]
 		if !ok {
 			seriesLineColor = self.DefaultLineColor
@@ -115,7 +118,7 @@ func (self *LineGraph) Buffer() *Buffer {
 		str := seriesName + " " + self.Labels[seriesName]
 		for k, char := range str {
 			if char != ' ' {
-				buf.SetCell(3+k, j+2, Cell{char, seriesLineColor, self.Bg})
+				buf.SetCell(3+k, i+2, Cell{char, seriesLineColor, self.Bg})
 			}
 		}
 
