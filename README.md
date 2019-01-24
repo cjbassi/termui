@@ -1,6 +1,6 @@
-# termui
-
 **DEPRECATED**: Please use the upstream termui repo now that development has resume there.
+
+# termui
 
 A fork of [termui](https://github.com/gizak/termui) with a lot of code cleanup and (frequently asked for) improvements.
 
