@@ -1,4 +1,4 @@
-**DEPRECATED**: Please use the upstream termui repo now that development has resume there.
+**DEPRECATED**: Please use the upstream termui repo now that development has resumed there.
 
 # termui
 
