@@ -1,5 +1,7 @@
 # termui
 
+**DEPRECATED**: Please use the upstream termui repo now that development has resume there.
+
 A fork of [termui](https://github.com/gizak/termui) with a lot of code cleanup and (frequently asked for) improvements.
 
 You can see an implementation/example usage of this library [here](https://github.com/cjbassi/gotop).
